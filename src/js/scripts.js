@@ -18,12 +18,10 @@ const loginBtn = $('.js-login-button');
 const logoutBtn = $('.js-logout-button');
 // edditng product
 const editProductBtn = $('#js-edit-product-btn');
-// const editProductForm = document.getElementById('js-form-edit');
-const editProductForm = $('#js-form-edit');
+const editProductForm = document.getElementById('js-form-edit');
+// const editProductForm = $('#js-form-edit');
 
 const deleteProductBtn = $('.product-item__delete');
-// phoneMask
-$('.js-phone-mask').mask("+7(999)-999-99-99");
 
 // for filter in home page
 const shopWrapper = $('.shop__wrapper');

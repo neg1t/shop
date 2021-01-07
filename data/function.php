@@ -12,11 +12,7 @@ function getConnection() {
     return $db;
 }
 
-function num_word($number, $after) 
-{
-	$cases = array (2, 0, 1, 1, 1, 2);
-	echo $after[ ($number%100>4 && $number%100<20)? 2: $cases[min($number%10, 5)] ];
-}
+
 
 function deletePhoto($photo)
 {
@@ -358,7 +354,7 @@ function editProduct($data, $get, $file)
             return 'Не удалось загрузить товар в базу данных';
         }
     } else {
-        return 'Нельзя изменить товар, он нахоодится в следующих заказах ' . $orders;
+        return 'Нельзя изменить товар, он находится в следующих заказах ' . $orders;
     }
 }
 
@@ -491,6 +487,12 @@ function changeStatus($data)
     } else {
         echo 'Что-то пошло не так';
     }
+}
+
+function num_word($number, $after) 
+{
+	$cases = array (2, 0, 1, 1, 1, 2);
+	echo $after[ ($number%100>4 && $number%100<20)? 2: $cases[min($number%10, 5)] ];
 }
 
 function getNavMenu()

@@ -33,16 +33,16 @@ $priceRange = mysqli_fetch_assoc(mysqli_query(getConnection(), "SELECT MIN(FLOOR
             <span class="range__info">Цена</span>
             <div class="range__line" aria-label="Range Line"></div>
             <div class="range__res" >
-              <span class="range__res-item min-price" > <?= $priceRange ? $priceRange['min'] : '0' ?> руб.</span>
-              <span class="range__res-item max-price" > <?= $priceRange ? $priceRange['max'] : '0' ?> руб.</span>
+              <span class="range__res-item min-price" > <?=$priceRange ? $priceRange['min'] : '0' ?> руб.</span>
+              <span class="range__res-item max-price" > <?=$priceRange ? $priceRange['max'] : '0' ?> руб.</span>
             </div>
           </div>
         </div>
 
         <fieldset class="custom-form__group">
-          <input type="checkbox" name="new" id="new" class="custom-form__checkbox" <?= isset($_GET['new']) && $_GET['new'] === 'on' ? 'checked' : '' ?>>
+          <input type="checkbox" name="new" id="new" class="custom-form__checkbox" <?=isset($_GET['new']) && $_GET['new'] === 'on' ? 'checked' : '' ?>>
           <label for="new" class="custom-form__checkbox-label custom-form__info"  style="display: block;">Новинка</label>
-          <input type="checkbox" name="sale" id="sale" class="custom-form__checkbox" <?= isset($_GET['sale']) && $_GET['sale'] === 'on' ? 'checked' : '' ?>>
+          <input type="checkbox" name="sale" id="sale" class="custom-form__checkbox" <?=isset($_GET['sale']) && $_GET['sale'] === 'on' ? 'checked' : '' ?>>
           <label for="sale" class="custom-form__checkbox-label custom-form__info" style="display: block; ">Распродажа</label>
         </fieldset>
         <button class="button js-filter-btn" name="filter" type="submit" style="width: 100%">Применить</button>

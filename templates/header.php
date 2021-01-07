@@ -28,7 +28,6 @@ $categories = getCategoriesFromDB();
 
   <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="/src/js/jquery.maskedinput.min.js" defer></script>
   <script src="/src/js/scripts.js" defer></script>
 </head>
 <body> 
